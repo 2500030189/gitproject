@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+
+    <h2>Login Form</h2>
+
+    <form onsubmit="login(); return false;">
+
+        <label>User ID:</label><br>
+        <input type="text" id="userid" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" id="email" required><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" id="password" required><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" id="phone"><br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" id="dob"><br><br>
+
+        <input type="checkbox" id="remember">
+        <label>Remember Me</label><br><br>
+
+        <input type="submit" value="Login">
+        <input type="reset" value="Clear">
+
+    </form>
+
+    <h3 id="message"></h3>
+
+    <script>
+        function login() {
+            document.getElementById("message").innerHTML =
+                "Login Successful!";
+        }
+    </script>
+
+</body>
+</html>
